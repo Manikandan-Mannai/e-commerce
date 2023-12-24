@@ -27,7 +27,7 @@ const LandingPage = () => {
         <Container>
             <HeroSection>
                 <TextContainer>
-                    <h1>Welcome to Our Store</h1>
+                    <h1>welcome to Our Store</h1>
                     <p>Your go-to place for amazing products.</p>
                 </TextContainer>
                 <ImageContainer>
