@@ -6,7 +6,6 @@ const login = require("./routes/login");
 const stripeRoute = require("./routes/stripe");
 const productsRoute = require("./routes/products");
 const bodyParser = require('body-parser');
-const products = require("./products");
 const users = require("./routes/users")
 const orders = require("./routes/orders")
 
