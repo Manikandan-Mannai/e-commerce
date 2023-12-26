@@ -16,12 +16,16 @@ const nodemailer = require("nodemailer");
 const app = express();
 require("dotenv").config();
 
-const port = process.env.PORT || 5000;
+const port = `https://e-commerce-ylbo.onrender.com`;
 
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 app.use(express.json());
-app.use(cors({ origin: 'https://main--brilliant-cupcake-5560ea.netlify.app' }));
+
+app.use(cors({
+  origin: 'https://main--brilliant-cupcake-5560ea.netlify.app',
+  credentials: true
+}));
 
 app.use("/api/register", register);
 app.use("/api/login", login);
