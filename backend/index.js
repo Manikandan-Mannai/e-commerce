@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 app.use(express.json());
 
 app.use(cors({
-  origin: 'https://main--brilliant-cupcake-5560ea.netlify.app',
+  origin: ['https://main--brilliant-cupcake-5560ea.netlify.app'],
   credentials: true
 }));
 
