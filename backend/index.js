@@ -15,7 +15,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 require("dotenv").config();
 
-const port = 5000;
+const port = 3000;
 
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
